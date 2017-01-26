@@ -15,6 +15,7 @@ public class Nomina {
     Trabajador worker;
     Date fechaPago;
     float saldo; 
+    Departamento depa;
     
             
 }
