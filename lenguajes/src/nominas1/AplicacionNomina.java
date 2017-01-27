@@ -13,13 +13,13 @@ public class AplicacionNomina {
     public static void main(String[] args) {
         int x=2;
         Trabajador worker=new Trabajador ();
-        worker.nombre="Pedro";
-        worker.paterno="Lopez";
-        worker.numeroSeguro=90;
-        if(worker.numeroSeguro<=100)worker.numeroSeguro=100;
+        worker.setNombre("Pedro");
+        worker.setPaterno("Lopez");
+        worker.setNumeroSeguro(90);
+        if(worker.getNumeroSeguro()<=100)worker.setNumeroSeguro(100);
         
-    System.out.print("El nombre es "+worker.nombre);           
-    System.out.print("El no. seguro es "+worker.numeroSeguro);                           
+    System.out.print("El nombre es "+worker.getNombre());           
+    System.out.print("El no. seguro es "+worker.getNumeroSeguro());                           
             }
     
 }

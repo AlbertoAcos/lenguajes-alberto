@@ -7,9 +7,24 @@ package elimc;
 
 
 public class Imc {
-Usuario user;
-String calcular(){
-return "Estas flaco";
+private Usuario user;
+
+public Imc(){
+    
 }
+
+
+String calcular(){
+ float imc=user.getPeso()/(user.getAltura()*user.getAltura());
+    return "tu imc es "+imc;
+}
+
+    public Usuario getUser() {
+        return user;
+    }
+
+    public void setUser(Usuario user) {
+        this.user = user;
+    }
     
 }
