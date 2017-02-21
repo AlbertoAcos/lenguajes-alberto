@@ -88,6 +88,7 @@ public class panel extends javax.swing.JFrame {
             selector.showOpenDialog(this);
             
             File file=  selector.getSelectedFile();
+            ValidacionArchivo.validarExtencion(file);
             Modelolector modelo=new Modelolector();
             textoResultado.setText( modelo.leerArchivo(file));                       
         } catch (Exception ex) {
