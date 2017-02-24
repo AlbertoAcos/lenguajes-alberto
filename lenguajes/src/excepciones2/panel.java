@@ -90,6 +90,7 @@ public class panel extends javax.swing.JFrame {
             File file=  selector.getSelectedFile();
             ValidacionArchivo.validarExtencion(file);
             Modelolector modelo=new Modelolector();
+            ValidacionArchivo.validarMayusculas(file);
             textoResultado.setText( modelo.leerArchivo(file));                       
         } catch (Exception ex) {
            textoResultado.setText(ex.getMessage());
