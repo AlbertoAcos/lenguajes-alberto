@@ -5,21 +5,29 @@
  */
 package Serializar;
 
-
-import java.io.*;
-
-public class Usuario implements Serializable{
+/**
+ *
+ * @author T-102
+ */
+public class Cliente {
     private String nombre;
-    private String email;
+    private float sueldo;
     private int edad;
 
-    public Usuario() {
+    @Override
+    public String toString() {
+       return "Nombre: "+nombre+" sueldo :"+ sueldo+" Edad:"+edad;
     }
-
-    Usuario(String nombre, String email, int edad) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+    
+            public Cliente(String nombre, float sueldo, int edad){
+                this.nombre=nombre;
+                this.sueldo=sueldo;
+                this.edad=edad;
+            }
+    public Cliente(){
+        
     }
-
     public String getNombre() {
         return nombre;
     }
@@ -28,12 +36,12 @@ public class Usuario implements Serializable{
         this.nombre = nombre;
     }
 
-    public String getEmail() {
-        return email;
+    public float getSueldo() {
+        return sueldo;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSueldo(float sueldo) {
+        this.sueldo = sueldo;
     }
 
     public int getEdad() {
@@ -43,9 +51,6 @@ public class Usuario implements Serializable{
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
-    
     
     
 }
-
