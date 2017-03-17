@@ -8,15 +8,24 @@ package Serializar;
 import java.io.*;
 
 public class PersistenciaUsuario {
-    /*
-    Primer metodo de tipo accion guardar
-    */
-    public void guardar(Usuario u) throws Exception{
-    File file=new File("Base-usuarios");
-    FileOutputStream fos=new FileOutputStream(file); //string de bites
-    ObjectOutput oos=new ObjectOutputStream(fos);   
-    oos.writeObject(u);//objeto serializado y pasa el file y fos
-    
+   public void guardar(Usuario u)throws Exception{
+        File file=new File("basesita-usuarios");
+        FileOutputStream fos=new FileOutputStream(file);
+        ObjectOutputStream oos=new ObjectOutputStream(fos);
+         oos.writeObject(u);
     }
     
+    /*
+    primero obtenemos la busqueda
+    */
+    public Usuario buscarPorNombre(String nombre)throws Exception{
+        File file=new File("basesita-usuarios");
+        FileInputStream fis=new FileInputStream(file);
+        ObjectInputStream ois=new ObjectInputStream(fis);
+        Usuario encontrado=null;
+   Usuario u=     (Usuario) ois.readObject();
+       //Comparamos
+       if(u.getNombre().equals(nombre))encontrado=u;
+       return encontrado;
+    }
 }

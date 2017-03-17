@@ -16,9 +16,13 @@ public class Usuario implements Serializable{
     public Usuario() {
     }
 
-    Usuario(String nombre, String email, int edad) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Usuario(String nombre, String email, int edad) {
+        this.nombre = nombre;
+        this.email = email;
+        this.edad = edad;
     }
+
+    
 
     public String getNombre() {
         return nombre;
