@@ -8,3 +8,9 @@
  * Created: 3/04/2017
  */
 
+create table lenguajes (id integer primary key auto_increment,
+nombre varchar(30), edad integer);
+
+select * from lenguajes;
+
+select * from menso;

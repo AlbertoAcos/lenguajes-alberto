@@ -5,10 +5,25 @@
  */
 package org_unitec;
 
-/**
- *
- * @author T-102
- */
+import java.sql.*;
+
 public class OperacionesSQL {
+    
+    //Metodo para crear una tabla de prueba
+   public static void crearTablaPrueba()throws Exception{
+       
+       //Primero nos conectamos
+      Connection con= Conexion.conectarse("root", "root");
+      
+      //Segundo generamos un Statement
+       Statement st= con.createStatement();
+       
+     //Ejecutamos una consulta
+st.execute
+        ("CREATE TABLE menso(id integer, nombre varchar(20))");
+st.close();
+con.close();
+      
+   }
     
 }
