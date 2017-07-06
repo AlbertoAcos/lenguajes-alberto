@@ -11,10 +11,10 @@ package Solucion;
  */
 public class Prestamo {
     public static void prestarAlumno(Alumno alumno) throws Exception{
-    if(alumno.getLibros().lenght>=3) thow new Exception();
+    if(3 <= alumno.getLibros().length) throw new Exception();
         }
     
     public static void prestarProfesor(Profesor profesor) throws Exception{
-    if(profesor.getLibros().lenght>=2) thow new Exception();
+    if(profesor.getLibros().length>=2) throw  new Exception();
         }
 }

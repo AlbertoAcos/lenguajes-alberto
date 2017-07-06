@@ -10,9 +10,9 @@ package patos;
  * @author T-102
  */
 public class AplicacionPatos {
- public static void main(String[] args, Comportamiento[] New){
+    public static void main(String[] args, Comportamiento[] New) {
      
-     String patos[]=new String [5];
+   /*  String patos[]=new String [5];
    ComportamientoVolar patos[]=New ComportamietoVolar[5];
      patos[0]=new PatoMexicano();
      patos[1]=new PatoMexicano();
@@ -20,5 +20,6 @@ public class AplicacionPatos {
      patos[3]=new PatoEuropeo();
      patos[4]=new PatoCanadiense();
      
- }
+ }*/
+    }
 }

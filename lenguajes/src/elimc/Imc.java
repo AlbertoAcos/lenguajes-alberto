@@ -9,6 +9,8 @@ package elimc;
 public class Imc {
 private Usuario user;
 
+
+
 public Imc(){
     
 }
