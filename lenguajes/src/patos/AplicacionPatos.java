@@ -8,7 +8,7 @@ package patos;
 /**
  *
  * @author T-102
- */
+ *//*
 public class AplicacionPatos {
     public static void main(String[] args, Comportamiento[] New) {
      
@@ -20,6 +20,6 @@ public class AplicacionPatos {
      patos[3]=new PatoEuropeo();
      patos[4]=new PatoCanadiense();
      
- }*/
+ }
     }
-}
+}*/

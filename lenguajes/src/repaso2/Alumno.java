@@ -2,7 +2,7 @@ package repaso2;
 
 /**
  * Created by chuch on 26/06/2017.
- */
+ *//*
 public class Alumno {
     private int cuenta;
     private String nombre;
@@ -11,7 +11,7 @@ public class Alumno {
     //Constructor de defecto
     public Alumno(){}
 
-    //Encapsulamiento
+   /* //Encapsulamiento
     public int getCuenta() {
         return cuenta;
     }
@@ -46,3 +46,4 @@ public class Alumno {
 
 
 }
+*/
