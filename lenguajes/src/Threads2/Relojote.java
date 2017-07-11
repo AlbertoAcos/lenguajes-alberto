@@ -4,7 +4,7 @@ package Threads2;
  * Created by chuch on 06/07/2017.
  * aqui vamos a usar el polimorfismo, esta clase es polimorfica
  */
-public class Relojote implements  Runnable,ComportamientoComer{
+public class Relojote implements  Runnable{
     public static void main(String[] args) {
         //Probemoos que no podemos crear objetos de las interfaces
       //  ComportamientoComer cp=new ComportamientoComer();
